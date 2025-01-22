@@ -6,33 +6,25 @@
     <title>Feedback Form</title>
 </head>
 <body>
-    <!-- Form Heading -->
     <h1>Feedback Form</h1>
-
-    <!-- Form -->
-    <form>
-        <!-- Name Input -->
+    <form action="#" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
         <br><br>
 
-        <!-- Portfolio Input -->
-        <label for="portfolio">Portfolio:</label>
+        <label for="portfolio">Portfolio URL:</label>
         <input type="url" id="portfolio" name="portfolio" required>
         <br><br>
 
-        <!-- Favorite Color Input -->
         <label for="favColor">Favorite Color:</label>
-        <input type="color" id="favColor" name="favColor">
+        <input type="color" id="favColor" name="favColor" required>
         <br><br>
 
-        <!-- Likeness Input -->
-        <label for="likeness">Likeness:</label>
-        <input type="range" id="likeness" name="likeness" min="1" max="100">
+        <label for="likeness">Likeness (1-100):</label>
+        <input type="range" id="likeness" name="likeness" min="1" max="100" required>
         <br><br>
 
-        <!-- Submit Button -->
-        <button type="submit">Submit</button>
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
